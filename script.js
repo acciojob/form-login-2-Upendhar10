@@ -5,14 +5,15 @@ const form = document.getElementById('myForm');
 form.addEventListener("submit" , function (event){
 	event.preventDefault();
 
-	let firstName = document.getElementById('firstName').value;
-	let lastName = document.getElementById('lastName').value;
-	let phone = document.getElementById('phone').value;
-	let email = document.getElementById('email').value;
+	const userData = event.target;
 
-	alert(
-		`FirstName: ${firstName} LastName: ${lastName} Phone Number: ${phone} Email ID: ${email}` 
-	)
+	let firstName = userData.elements["First Name"].value.trim();
+	let lastName = userData.elements["Last Name"].value.trim();
+	let phone = userData.elements["Phone Number"].value.trim();
+	let email = userData.elements["Email ID"].value.trim();
+
+	let message = `FirstName: ${firstName} LastName: ${lastName} Phone Number: ${phone} Email ID: ${email}` 
+	alert(message);
 
 	form.reset();
 })
