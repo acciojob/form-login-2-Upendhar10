@@ -15,5 +15,5 @@ form.addEventListener("submit" , function (event){
 	let message = `FirstName: ${firstName} LastName: ${lastName} Phone Number: ${phone} Email ID: ${email}` 
 	alert(message);
 
-	form.reset();
+	// form.reset();
 })
