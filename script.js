@@ -7,10 +7,10 @@ form.addEventListener("submit" , function (event){
 
 	const userData = event.target;
 
-	let firstName = userData.elements["FirstName"].value.trim();
-	let lastName = userData.elements["LastName"].value.trim();
-	let phone = userData.elements["PhoneNumber"].value.trim();
-	let email = userData.elements["EmailID"].value.trim();
+	let firstName = userData.elements["First Name"].value.trim();
+	let lastName = userData.elements["Last Name"].value.trim();
+	let phone = userData.elements["Phone Number"].value.trim();
+	let email = userData.elements["Email ID"].value.trim();
 
 	alert(`FirstName: ${firstName} LastName: ${lastName} Phone Number: ${phone} Email ID: ${email}`);
 
