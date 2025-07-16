@@ -12,7 +12,7 @@ form.addEventListener("submit" , function (event){
 	let phone = userData.elements["Phone Number"].value.trim();
 	let email = userData.elements["Email ID"].value.trim();
 
-	alert(`FirstName: ${firstName} LastName: ${lastName} Phone Number: ${phone} Email ID: ${email}`);
+	alert(`First Name: ${firstName} Last Name: ${lastName} Phone Number: ${phone} Email ID: ${email}`);
 
 	// form.reset();
 })
